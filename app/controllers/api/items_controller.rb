@@ -11,7 +11,7 @@ class Api::ItemsController < ApplicationController
     if item.save 
       render json: item
     else
-      render json: { errors: item.errors} status: :unprocessable_entity
+      render json: { errors: item.errors} 
     end
   end
 
